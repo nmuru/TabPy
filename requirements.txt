@@ -1,3 +1,7 @@
 # installs dependencies from ./setup.py, and the package itself,
 # in editable mode
 -e .
+
+pandas
+numpy
+scikit-learn==1.0.2
