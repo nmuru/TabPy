@@ -2,7 +2,8 @@ import pickle
 from tabpy.tabpy_tools.client import Client
 import pandas as pd
 import numpy as np
-from tabpy.utils.model import setup_utils
+ 
+from tabpy.models.utils import setup_utils
 model=pickle.load(open('tabpy/models/scripts/dtmodel.sav','rb'))
 
 # tabpy
