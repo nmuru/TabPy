@@ -52,7 +52,7 @@ def deploy_model(funcName, func, funcDescription):
     if auth_on:
         # credentials are passed in from setup.py
         user, passwd = sys.argv[2], sys.argv[3] if len(sys.argv) == 4 else get_creds()
-        connection.set_credentials(user, passwd)
+        connection.set_credentials('nmurugesh', 'N_Murugs123')
 
     connection.deploy(funcName, func, funcDescription, override=True)
     print(f"Successfully deployed {funcName}")
