@@ -1,6 +1,4 @@
-tabpy
 pandas
 numpy
 scikit-learn==1.0.2
-gunicorn>=20.0,<21.0
  
