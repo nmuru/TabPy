@@ -47,12 +47,12 @@ def deploy_model(funcName, func, funcDescription):
 #     config_file_path = sys.argv[1] if len(sys.argv) > 1 else get_default_config_file_path()
 #     port, auth_on, prefix = parse_config(config_file_path)
 
-    connection = Client(f"http://localhost:9004/")
+    connection = Client("http://localhost:9004/")
 
 #     if auth_on:
         # credentials are passed in from setup.py
 #         user, passwd = sys.argv[2], sys.argv[3] if len(sys.argv) == 4 else get_creds()
-    connection.set_credentials('nmurugesh', 'N_Murugesh123')
+    connection.set_credentials('nmurugesh', 'N_Murugs123')
 
     connection.deploy(funcName, func, funcDescription, override=True)
     print(f"Successfully deployed {funcName}")
