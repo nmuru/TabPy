@@ -6,7 +6,7 @@ import numpy as np
 from tabpy.models.utils import setup_utils
 model=pickle.load(open('tabpy/models/scripts/dtmodel.sav','rb'))
 
-# tabpy
+tabpy
 
 def predict_student(model,X_test):
     model=pickle.load(open('dtmodel.sav','rb'))
